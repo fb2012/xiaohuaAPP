@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FBTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    FBTabbarViewController *showVC=[[FBTabbarViewController alloc]init];
+    self.window.rootViewController=showVC;
+    
+    
     return YES;
 }
 

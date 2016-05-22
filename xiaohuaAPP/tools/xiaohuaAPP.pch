@@ -1,0 +1,24 @@
+//
+//  xiaohuaAPP.pch
+//  xiaohuaAPP
+//
+//  Created by fengbing on 16/5/21.
+//  Copyright © 2016年 fengbing. All rights reserved.
+//
+
+#ifndef xiaohuaAPP_pch
+#define xiaohuaAPP_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "FBNetWork.h"
+#import "FBTools.h"
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#endif /* xiaohuaAPP_pch */
